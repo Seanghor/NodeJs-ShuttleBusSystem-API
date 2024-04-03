@@ -1,0 +1,38 @@
+version: "3.9"
+name: sbs
+services:
+  db:
+    image: postgres:14.3-alpine
+    constainer_name: sbs-db_container
+    restart: always
+    environment:
+      POSTGRES_USER: sbs
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: sbs_db
+    ports:
+      - "5438:5438"
+    command: -p 5438
+    networks:
+      - sbs-network
+    volumes:
+      - ./backup/backup.sql:/docker-entrypoint-initdb.d/backup.sql
+      - ./script/restore.sh:/docker-entrypoint-initdb.d/restore.sh
+  sbs-api:
+    image: sbs-backend_image
+    container_name: sbs-backend_container
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    env_file: ./.env
+    ports:
+      - "${PORT}:${PORT}"
+    depends_on:
+      - db
+    command: pnpm start
+    networks:
+      - sbs-network
+networks:
+  sbs-network:
+    driver: bridge

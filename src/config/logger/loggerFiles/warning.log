@@ -1,0 +1,345 @@
+2024-03-02T18:38:31.436Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/user/pdf-test [testingGeneratePDFController] Message:Error: Could not load html template
+2024-03-02T19:04:46.477Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/user/pdf-test [testingGeneratePDFController] Message:TargetCloseError: Protocol error (Page.printToPDF): Target closed
+2024-03-02T19:09:39.814Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/user/pdf-test [testingGeneratePDFController] Message:TargetCloseError: Protocol error (Page.printToPDF): Target closed
+2024-03-02T19:10:58.272Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/user/pdf-test [testingGeneratePDFController] Message:TargetCloseError: Protocol error (Page.printToPDF): Target closed
+2024-03-02T19:12:13.240Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/user/pdf-test [testingGeneratePDFController] Message:TargetCloseError: Protocol error (Page.printToPDF): Target closed
+2024-03-02T19:16:09.768Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/user/pdf-test [testingGeneratePDFController] Message:TargetCloseError: Protocol error (Page.printToPDF): Target closed
+2024-03-02T19:16:57.216Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/user/pdf-test [testingGeneratePDFController] Message:TargetCloseError: Protocol error (Page.printToPDF): Target closed
+2024-03-02T21:05:45.745Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/user/pdf?role=student [exportAllUser] Message:Error: Could not load html template
+2024-03-03T05:41:48.576Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/user/pdf?role=student [exportAllUser] Message:ReferenceError: ejs:65
+    63|     <div style="text-align: right; font-size: 12px; color: #666; ">Created: <%= createAt %></div>
+    64|   <div class="content">
+ >> 65|     <h1 style="font-size: 40px; font-weight: bold; margin-bottom: 20px; padding: 10px; color: #0c1686; text-align: center; margin-bottom: 50px;">List of <%= headername %></h1>
+    66|         <table>
+    67|             <thead>
+    68|                 <tr>
+
+headername is not defined
+2024-03-03T05:43:11.720Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/user/pdf?role=student [exportAllUser] Message:ReferenceError: ejs:80
+    78|             </thead>
+    79|             <tbody>
+ >> 80|                 <% data.forEach((user, index) => { %>
+    81|                     <tr>
+    82|                         <td><%= index + 1 %></td>
+    83|                         <td class="name"><%= user.username %></td>
+
+data is not defined
+2024-03-03T07:00:53.445Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/user/pdf?role=student [exportAllUser] Message:TypeError: templateDir.resolve is not a function
+2024-03-03T07:01:39.499Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/user/pdf?role=student [exportAllUser] Message:TypeError: path.path is not a function
+2024-03-03T07:01:44.385Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/user/pdf?role=student [exportAllUser] Message:TypeError: path.path is not a function
+2024-03-03T07:01:46.981Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/user/pdf?role=student [exportAllUser] Message:TypeError: path.path is not a function
+2024-03-03T07:15:18.903Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/user/pdf?role=student [exportAllUser] Message:Error: Could not load html template
+2024-03-03T07:15:20.392Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/user/pdf?role=student [exportAllUser] Message:Error: Could not load html template
+2024-03-03T07:17:31.592Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/user/pdf?role=student [exportAllUser] Message:Error: Could not load html template
+2024-03-03T07:33:59.871Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/user/pdf [exportAllUser] Message:Error: Could not load html template
+2024-03-03T07:34:00.961Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/user/pdf [exportAllUser] Message:Error: Could not load html template
+2024-03-03T07:51:25.159Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/schedule/filter?scheduleId=6d4b8e9b-66cf-416f-9023-55c0dcca07c4 [exportPDFBookingByScheduleIdController] Message:Error: "listName" not defined in [object Object] - 66:159
+2024-03-03T07:55:44.204Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/schedule/filter?scheduleId=6d4b8e9b-66cf-416f-9023-55c0dcca07c4 [exportPDFBookingByScheduleIdController] Message:Error: "department" not defined in [object Object] - 69:26
+2024-03-03T07:55:46.809Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/schedule/filter?scheduleId=6d4b8e9b-66cf-416f-9023-55c0dcca07c4 [exportPDFBookingByScheduleIdController] Message:Error: "department" not defined in [object Object] - 69:26
+2024-03-03T07:56:37.975Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/schedule/filter?scheduleId=6d4b8e9b-66cf-416f-9023-55c0dcca07c4 [exportPDFBookingByScheduleIdController] Message:Error: Parse error on line 65:
+...       <td>{{this.index + 1}}</td>
+        
+-----------------------^
+Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'INVALID'
+2024-03-03T07:56this.index6Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/schedule/filter?scheduleId=6d4b8e9b-66cf-416f-9023-55c0dcca07c4 [exportPDFBookingByScheduleIdController] Message:Error: Parse error on line 65:
+...       <td>{{@index + 1}}</td>
+        
+-----------------------^
+Expecting 'CLOSEthis.indexLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'INVALID'
+2024-03-03T07:56:41.060Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/schedule/filter?scheduleId=6d4b8e9b-66cf-416f-9023-55c0dcca07c4 [exportPDFBookingByScheduleIdController] Message:Error: Parse error on line 65:
+...       <td>{{@index + 1}}</td>
+        
+-----------------------^
+Expecting 'CLOSE_RAW_BLOCK', 'CLOSE', 'CLOSE_UNESCAPED', 'OPEN_SEXPR', 'CLOSE_SEXPR', 'ID', 'OPEN_BLOCK_PARAMS', 'STRING', 'NUMBER', 'BOOLEAN', 'UNDEFINED', 'NULL', 'DATA', 'SEP', got 'INVALID'
+2024-03-03T08:07:01.703Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "dateStr" not defined in [object Object] - 131:170
+2024-03-03T08:09:05.435Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "dateStr" not defined in [object Object] - 131:170
+2024-03-03T08:09:06.926Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "dateStr" not defined in [object Object] - 131:170
+2024-03-03T08:09:54.998Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "dateStr" not defined in [object Object] - 131:170
+2024-03-03T08:09:56.869Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "dateStr" not defined in [object Object] - 131:170
+2024-03-03T08:10:10.325Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "dateStr" not defined in [object Object] - 131:170
+2024-03-03T08:10:11.324Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "dateStr" not defined in [object Object] - 131:170
+2024-03-03T08:11:53.339Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "dateStr" not defined in [object Object] - 131:170
+2024-03-03T08:12:09.770Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "dateStr" not defined in [object Object] - 131:170
+2024-03-03T08:12:48.873Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "dateStr" not defined in [object Object] - 131:170
+2024-03-03T08:13:41.952Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "dateStr" not defined in [object Object] - 131:170
+2024-03-03T08:13:44.734Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "dateStr" not defined in [object Object] - 131:170
+2024-03-03T08:14:38.326Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "dateStr" not defined in [object Object] - 131:170
+2024-03-03T08:14:58.612Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "dateStr" not defined in [object Object] - 131:170
+2024-03-03T08:15:39.697Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "departureDate" not defined in [object Object] - 131:170
+2024-03-03T08:15:43.389Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "departureDate" not defined in [object Object] - 131:170
+2024-03-03T08:16:58.041Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "dateStr" not defined in [object Object] - 131:170
+2024-03-03T08:18:41.136Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "dateStr" not defined in [object Object] - 131:170
+2024-03-03T08:20:10.544Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "departureDate" not defined in [object Object] - 131:170
+2024-03-03T08:20:11.918Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "departureDate" not defined in [object Object] - 131:170
+2024-03-03T08:20:12.566Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "departureDate" not defined in [object Object] - 131:170
+2024-03-03T08:20:13.136Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "departureDate" not defined in [object Object] - 131:170
+2024-03-03T08:20:13.524Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "departureDate" not defined in [object Object] - 131:170
+2024-03-03T08:20:36.624Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "departureDate" not defined in [object Object] - 131:170
+2024-03-03T08:20:37.798Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "departureDate" not defined in [object Object] - 131:170
+2024-03-03T08:20:38.458Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "departureDate" not defined in [object Object] - 131:170
+2024-03-03T08:20:38.990Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "departureDate" not defined in [object Object] - 131:170
+2024-03-03T08:20:39.859Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "departureDate" not defined in [object Object] - 131:170
+2024-03-03T08:22:38.233Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "dateStr" not defined in [object Object] - 131:170
+2024-03-03T08:22:39.258Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "dateStr" not defined in [object Object] - 131:170
+2024-03-03T08:32:02.501Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "departureDate" not defined in [object Object] - 132:175
+2024-03-03T08:32:46.035Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "departureDate" not defined in [object Object] - 132:175
+2024-03-03T08:33:17.011Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "departureDate" not defined in [object Object] - 132:175
+2024-03-03T08:33:18.074Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "departureDate" not defined in [object Object] - 132:175
+2024-03-03T08:35:20.177Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "departureDate" not defined in [object Object] - 132:175
+2024-03-03T08:35:49.070Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "departureDate" not defined in [object Object] - 132:175
+2024-03-03T08:35:50.473Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "departureDate" not defined in [object Object] - 132:175
+2024-03-03T08:38:45.459Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:TypeError: (lookupProperty(...) || alias1(...)).call is not a function
+2024-03-03T08:38:56.570Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:TypeError: (lookupProperty(...) || alias1(...)).call is not a function
+2024-03-03T08:39:45.972Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "inc" not defined in [object Object] - 152:38
+2024-03-03T08:39:47.755Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/date/filter?date=2024-07-02 [exportPDFBookingByDateController] Message:Error: "inc" not defined in [object Object] - 152:38
+2024-03-03T08:50:55.343Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/schedule/filter?scheduleId=50be4c14-bf25-45dc-ace8-9068c2fa6049 [exportPDFBookingByScheduleIdController] Message:TypeError: Cannot read properties of undefined (reading 'length')
+2024-03-03T08:51:31.316Z [204] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/schedule/filter?scheduleId=0a050ba2-aaf0-4005-91c7-27e04f27e332 [exportPDFBookingByScheduleIdController] Message:Error: no date to export
+2024-03-03T08:51:33.806Z [204] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/schedule/filter?scheduleId=0a050ba2-aaf0-4005-91c7-27e04f27e332 [exportPDFBookingByScheduleIdController] Message:Error: no date to export
+2024-03-03T08:51:34.951Z [204] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/schedule/filter?scheduleId=0a050ba2-aaf0-4005-91c7-27e04f27e332 [exportPDFBookingByScheduleIdController] Message:Error: no date to export
+2024-03-03T08:51:36.525Z [204] [warn] [admin@kit.edu.kh] [::1] GET:/booking/pdf/schedule/filter?scheduleId=0a050ba2-aaf0-4005-91c7-27e04f27e332 [exportPDFBookingByScheduleIdController] Message:Error: no date to export
+2024-03-03T10:29:53.265Z [400] [warn] [admin@kit.edu.kh] [::1] GET:/bus?limit=7&page=2&search=ssa [getAllBusController] Message:Error: Sorry maximum page is 1
+2024-03-03T14:49:57.615Z [409] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Sub Location name is already exist
+2024-03-03T14:51:05.252Z [409] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Sub Location name is already exist
+2024-03-03T15:04:47.749Z [409] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Sub Location name is already exist
+2024-03-03T15:07:47.530Z [undefined] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:PrismaClientValidationError: 
+Invalid `prisma.departure.create()` invocation in
+D:\Work Place\Shuttle Bus System\SBS-Backed\SBS-Backend\src\routes\departure\departure.service.ts:67:48
+
+  64 if (existingDeparture) {
+  65   throw new CustomError(409, "Departure is already existed");
+  66 }
+→ 67 const departureData = await prisma.departure.create({
+       data: {
+         fromId: "32183776-22fa-417a-87ef-e1749a8ed8bb",
+         destinationId: "a7d1cfa2-45f2-451a-b475-905f496ab3cf",
+         departureTime: new Date("1899-12-30T08:00:00.000Z"),
+         pickupLocationId: "0becd4e0-b296-4dc8-b01e-4de6ae0c51ac",
+         dropLocationId: undefined,
+     +   from: {
+     +     create: MainLocationCreateWithoutFromLocationInput | MainLocationUncheckedCreateWithoutFromLocationInput,
+     +     connectOrCreate: MainLocationCreateOrConnectWithoutFromLocationInput,
+     +     connect: MainLocationWhereUniqueInput
+     +   }
+       },
+       select: {
+         id: true,
+         departureTime: true,
+         enable: true,
+         from: {
+           select: {
+             id: true,
+             mainLocationName: true
+           }
+         },
+         destination: {
+           select: {
+             id: true,
+             mainLocationName: true
+           }
+         },
+         pickupLocation: {
+           select: {
+             id: true,
+             subLocationName: true
+           }
+         },
+         dropLocation: {
+           select: {
+             id: true,
+             subLocationName: true
+           }
+         }
+       }
+     })
+
+Argument `from` is missing.
+2024-03-03T15:17:16.425Z [undefined] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:TypeError: Cannot read properties of null (reading 'id')
+2024-03-03T15:18:20.012Z [undefined] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:TypeError: Cannot read properties of null (reading 'id')
+2024-03-03T15:22:45.208Z [400] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Schedule for row 2 is already existed
+2024-03-03T15:22:49.747Z [400] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Schedule for row 2 is already existed
+2024-03-03T15:23:16.741Z [400] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Schedule for row 1 is already existed
+2024-03-03T15:24:12.562Z [400] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Schedule for row 1 is already existed
+2024-03-03T15:25:41.831Z [undefined] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:TypeError: Cannot read properties of null (reading 'id')
+2024-03-03T15:31:05.703Z [undefined] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:PrismaClientValidationError: 
+Invalid `prisma.departure.create()` invocation in
+D:\Work Place\Shuttle Bus System\SBS-Backed\SBS-Backend\src\routes\departure\departure.service.ts:67:48
+
+  64 if (existingDeparture) {
+  65   throw new CustomError(409, "Departure is already existed");
+  66 }
+→ 67 const departureData = await prisma.departure.create({
+       data: {
+         fromId: "85534be1-403b-44c6-a17c-74220a2a176b",
+         destinationId: "6f3176ab-d6fd-4414-945a-13a30c7f8e65",
+         departureTime: new Date("1899-12-30T08:00:00.000Z"),
+         pickupLocationId: undefined,
+         dropLocationId: undefined,
+     +   from: {
+     +     create: MainLocationCreateWithoutFromLocationInput | MainLocationUncheckedCreateWithoutFromLocationInput,
+     +     connectOrCreate: MainLocationCreateOrConnectWithoutFromLocationInput,
+     +     connect: MainLocationWhereUniqueInput
+     +   }
+       },
+       select: {
+         id: true,
+         departureTime: true,
+         enable: true,
+         from: {
+           select: {
+             id: true,
+             mainLocationName: true
+           }
+         },
+         destination: {
+           select: {
+             id: true,
+             mainLocationName: true
+           }
+         },
+         pickupLocation: {
+           select: {
+             id: true,
+             subLocationName: true
+           }
+         },
+         dropLocation: {
+           select: {
+             id: true,
+             subLocationName: true
+           }
+         }
+       }
+     })
+
+Argument `from` is missing.
+2024-03-03T15:33:53.043Z [undefined] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:TypeError: Cannot read properties of null (reading 'id')
+2024-03-03T15:54:00.530Z [undefined] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:PrismaClientValidationError: 
+Invalid `prisma.departure.create()` invocation in
+D:\Work Place\Shuttle Bus System\SBS-Backed\SBS-Backend\src\routes\schedule\schedule.service.ts:176:32
+
+  173 console.log("- create departure ....");
+  174 console.log("---> Departure Data: ", departure);
+  175 // await departureService.createDepartureService(departure as DepartureDto)
+→ 176 await prisma.departure.create({
+        data: {
+          fromId: "6f3176ab-d6fd-4414-945a-13a30c7f8e65",
+          destinationId: "85534be1-403b-44c6-a17c-74220a2a176b",
+          departureTime: new Date("1899-12-30T01:00:00.000Z"),
+          pickupLocationId: undefined,
+          dropLocationId: "de19bcf4-19da-4c39-8c32-e1b1bc3c7bc2",
+      +   from: {
+      +     create: MainLocationCreateWithoutFromLocationInput | MainLocationUncheckedCreateWithoutFromLocationInput,
+      +     connectOrCreate: MainLocationCreateOrConnectWithoutFromLocationInput,
+      +     connect: MainLocationWhereUniqueInput
+      +   }
+        }
+      })
+
+Argument `from` is missing.
+2024-03-03T16:01:20.124Z [400] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Schedule for row 1 is already existed
+2024-03-03T16:03:37.488Z [undefined] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:TypeError: Cannot read properties of null (reading 'id')
+2024-03-03T16:06:07.661Z [400] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Schedule for row 1 is already existed
+2024-03-03T16:07:19.749Z [400] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Schedule for row 1 is already existed
+2024-03-03T16:09:43.832Z [undefined] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:PrismaClientValidationError: 
+Invalid `prisma.departure.create()` invocation in
+D:\Work Place\Shuttle Bus System\SBS-Backed\SBS-Backend\src\routes\schedule\schedule.service.ts:176:32
+
+  173 console.log("- create departure ....");
+  174 console.log("---> Departure Data: ", departure);
+  175 // await departureService.createDepartureService(departure as DepartureDto)
+→ 176 await prisma.departure.create({
+        data: {
+          fromId: "b5046932-bfba-4328-8f2a-8004bed60464",
+          destinationId: "32cb76ee-4dbf-4ef5-93fa-d3955ad11f8e",
+          departureTime: new Date("1899-12-30T08:00:00.000Z"),
+          pickupLocationId: undefined,
+          dropLocationId: "230441b7-ac91-4042-b12f-4478aec4a0e7",
+      +   from: {
+      +     create: MainLocationCreateWithoutFromLocationInput | MainLocationUncheckedCreateWithoutFromLocationInput,
+      +     connectOrCreate: MainLocationCreateOrConnectWithoutFromLocationInput,
+      +     connect: MainLocationWhereUniqueInput
+      +   }
+        }
+      })
+
+Argument `from` is missing.
+2024-03-03T16:19:14.293Z [undefined] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:TypeError: Cannot read properties of null (reading 'id')
+2024-03-03T16:50:19.775Z [400] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Schedule for row 1 is already existed
+2024-03-03T16:50:33.857Z [400] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Schedule for row 1 is already existed
+2024-03-03T17:26:55.578Z [400] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Schedule for row 1 is already existed
+2024-03-03T17:27:30.039Z [400] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Schedule for row 1 is already existed
+2024-03-03T17:29:04.961Z [400] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Schedule for row 1 is already existed
+2024-03-03T17:30:34.727Z [400] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Schedule for row 1 is already existed
+2024-03-03T17:31:08.716Z [400] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Schedule for row 1 is already existed
+2024-03-03T17:31:13.596Z [400] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Schedule for row 1 is already existed
+2024-03-03T17:31:24.499Z [400] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Schedule for row 1 is already existed
+2024-03-03T17:31:39.606Z [400] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Schedule for row 1 is already existed
+2024-03-03T17:33:25.526Z [400] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Schedule for row 2 is already existed
+2024-03-04T08:39:47.666Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/mainLocation/test/find [deleteMainLocationController] Message:ReferenceError: location is not defined
+2024-03-04T08:41:41.202Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/mainLocation/test/find [deleteMainLocationController] Message:ReferenceError: location is not defined
+2024-03-04T08:42:16.759Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/mainLocation/test/find [deleteMainLocationController] Message:ReferenceError: location is not defined
+2024-03-04T08:43:11.644Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/mainLocation/test/find [deleteMainLocationController] Message:ReferenceError: location is not defined
+2024-03-04T08:43:30.419Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/mainLocation/test/find [deleteMainLocationController] Message:ReferenceError: location is not defined
+2024-03-04T08:43:44.322Z [undefined] [warn] [admin@kit.edu.kh] [::1] GET:/mainLocation/test/find [deleteMainLocationController] Message:ReferenceError: location is not defined
+2024-03-04T09:01:48.900Z [undefined] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:ReferenceError: location is not defined
+2024-03-04T09:02:53.297Z [400] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Schedule for row 1 is already existed
+2024-03-04T09:05:27.979Z [400] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Schedule for row 1 is already existed
+2024-03-04T09:05:30.464Z [400] [warn] [admin@kit.edu.kh] [::1] POST:/schedule/import [BatchCreateScheduleController] Message:Error: Schedule for row 1 is already existed
+2024-03-04T09:52:29.734Z [409] [warn] [admin@kit.edu.kh] [::1] POST:/mainLocation [createMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T09:52:31.836Z [409] [warn] [admin@kit.edu.kh] [::1] POST:/mainLocation [createMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T09:52:32.018Z [409] [warn] [admin@kit.edu.kh] [::1] POST:/mainLocation [createMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T09:52:32.190Z [409] [warn] [admin@kit.edu.kh] [::1] POST:/mainLocation [createMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T09:55:03.191Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/83da5d05-8712-4e36-9726-7809bd7d7f23 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T09:55:04.316Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/83da5d05-8712-4e36-9726-7809bd7d7f23 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T09:55:04.564Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/83da5d05-8712-4e36-9726-7809bd7d7f23 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T09:55:04.735Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/83da5d05-8712-4e36-9726-7809bd7d7f23 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:03:34.437Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:03:35.763Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:04:17.791Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:04:20.077Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:05:49.964Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:05:50.642Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:05:51.139Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:05:51.338Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:05:51.514Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:05:51.685Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:05:51.880Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:05:52.036Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:05:52.196Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:05:52.351Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:05:52.515Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:05:52.671Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:05:52.911Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:06:41.178Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:06:41.692Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:06:46.936Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:06:48.930Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:06:52.449Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:06:54.342Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:06:54.972Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:06:55.399Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:06:55.660Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:06:55.818Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:06:56.005Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:06:56.210Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:06:56.380Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:06:56.544Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:06:56.726Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:06:56.885Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:06:58.007Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:07:41.157Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:07:42.725Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:07:46.206Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:07:46.741Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:07:46.920Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:07:47.091Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:07:56.780Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:07:57.596Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:07:57.824Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:07:57.993Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:07:58.164Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:07:58.339Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:07:58.510Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:07:58.674Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:07:58.856Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name
+2024-03-04T10:07:59.896Z [409] [warn] [admin@kit.edu.kh] [::1] PUT:/mainLocation/bc16ec82-3d3a-46a6-961d-2cd807829967 [updateMainLocationController] Message:Error: Main Location already exist with duplicate name or similar name

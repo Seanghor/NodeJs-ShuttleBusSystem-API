@@ -1,0 +1,114 @@
+<<<<<<< HEAD
+2024-01-10T04:30:48.714Z [500] [error] [No email] [::1] POST:/user/request/reset-password [requestResetPasswordController] Message:Error: Error in sending mail
+2024-01-10T04:30:51.280Z [500] [error] [No email] [::1] POST:/user/request/reset-password [requestResetPasswordController] Message:Error: Error in sending mail
+2024-01-10T04:31:00.079Z [500] [error] [No email] [::1] POST:/user/request/reset-password [requestResetPasswordController] Message:Error: Error in sending mail
+2024-01-10T04:32:40.512Z [500] [error] [No email] [::1] POST:/user/request/reset-password [requestResetPasswordController] Message:Error: Error in sending mail
+2024-01-10T04:32:43.449Z [500] [error] [No email] [::1] POST:/user/request/reset-password [requestResetPasswordController] Message:Error: Error in sending mail
+2024-01-10T04:33:15.029Z [500] [error] [No email] [::1] POST:/user/request/reset-password [requestResetPasswordController] Message:Error: Error in sending mail
+2024-01-10T04:33:42.504Z [500] [error] [No email] [::1] POST:/user/request/reset-password [requestResetPasswordController] Message:Error: Error in sending mail
+2024-01-10T04:33:46.918Z [500] [error] [No email] [::1] POST:/user/request/reset-password [requestResetPasswordController] Message:Error: Error in sending mail
+2024-01-10T04:33:49.802Z [500] [error] [No email] [::1] POST:/user/request/reset-password [requestResetPasswordController] Message:Error: Error in sending mail
+2024-01-10T04:34:02.499Z [500] [error] [No email] [::1] POST:/user/request/reset-password [requestResetPasswordController] Message:Error: Error in sending mail
+2024-01-10T04:37:32.831Z [500] [error] [No email] [::1] POST:/user/request/reset-password [requestResetPasswordController] Message:Error: Error in sending mail
+=======
+2023-12-13T16:02:34.670Z [undefined] [error] [admin@kit.edu.kh] [::1] DELETE:/schedule/23352f24-7f46-44f6-b445-44d313f8cad0 [deleteScheduleByIdController] Message:PrismaClientKnownRequestError: 
+Invalid `prisma.schedule.delete()` invocation in
+D:\Work Place\Shuttle Bus System\SBS-Backed\SBS-Backend\src\routes\schedule\schedule.service.ts:381:54
+
+  378 if (!schedule) {
+  379   throw new CustomError(404, "Schedule not found");
+  380 }
+→ 381 const scheduleUpdate = await prisma.schedule.delete(
+Foreign key constraint failed on the field: `guestInfor_scheduleId_fkey (index)`
+2023-12-13T16:02:44.443Z [undefined] [error] [admin@kit.edu.kh] [::1] DELETE:/schedule/23352f24-7f46-44f6-b445-44d313f8cad0 [deleteScheduleByIdController] Message:PrismaClientKnownRequestError: 
+Invalid `prisma.schedule.delete()` invocation in
+D:\Work Place\Shuttle Bus System\SBS-Backed\SBS-Backend\src\routes\schedule\schedule.service.ts:381:54
+
+  378 if (!schedule) {
+  379   throw new CustomError(404, "Schedule not found");
+  380 }
+→ 381 const scheduleUpdate = await prisma.schedule.delete(
+Foreign key constraint failed on the field: `guestInfor_scheduleId_fkey (index)`
+2023-12-13T16:07:42.577Z [undefined] [error] [admin@kit.edu.kh] [::1] DELETE:/schedule/23352f24-7f46-44f6-b445-44d313f8cad0 [deleteScheduleByIdController] Message:PrismaClientKnownRequestError: 
+Invalid `prisma.schedule.delete()` invocation in
+D:\Work Place\Shuttle Bus System\SBS-Backed\SBS-Backend\src\routes\schedule\schedule.service.ts:380:54
+
+  377 if (!schedule) {
+  378   throw new CustomError(404, "Schedule not found");
+  379 }
+→ 380 const scheduleUpdate = await prisma.schedule.delete(
+Foreign key constraint failed on the field: `guestInfor_scheduleId_fkey (index)`
+2023-12-16T14:50:53.763Z [404] [error] [admin@kit.edu.kh] [::1] DELETE:/schedule/c16e64f8-1dee-49bd-b3a5-aab887f67145?guestId=dc814dd3-9799-4028-9a68-e2551e53f4bb [deleteScheduleByIdController] Message:Error: Schedule not found
+2023-12-20T18:25:58.040Z [500] [error] [admin@kit.edu.kh] [::1] GET:/booking/excel/schedule/filter?scheduleId=870fb66b-be4a-46d9-9de2-a0cb800cbcc4 [exportExcelBookingByScheduleIdController] Message:Can't set headers after they are sent.
+2023-12-20T18:26:25.480Z [500] [error] [admin@kit.edu.kh] [::1] GET:/booking/excel/schedule/filter?scheduleId=870fb66b-be4a-46d9-9de2-a0cb800cbcc4 [exportExcelBookingByScheduleIdController] Message:Can't set headers after they are sent.
+2023-12-20T18:26:50.376Z [500] [error] [admin@kit.edu.kh] [::1] GET:/booking/excel/schedule/filter?scheduleId=870fb66b-be4a-46d9-9de2-a0cb800cbcc4 [exportExcelBookingByScheduleIdController] Message:Can't set headers after they are sent.
+2023-12-20T18:30:03.547Z [500] [error] [admin@kit.edu.kh] [::1] GET:/booking/excel/schedule/filter?scheduleId=870fb66b-be4a-46d9-9de2-a0cb800cbcc4 [exportExcelBookingByScheduleIdController] Message:Can't set headers after they are sent.
+2023-12-20T18:32:21.077Z [500] [error] [admin@kit.edu.kh] [::1] GET:/booking/excel/schedule/filter?scheduleId=870fb66b-be4a-46d9-9de2-a0cb800cbcc4 [exportExcelBookingByScheduleIdController] Message:Can't set headers after they are sent.
+2023-12-20T18:36:07.685Z [500] [error] [admin@kit.edu.kh] [::1] GET:/booking/excel/schedule/filter?scheduleId=870fb66b-be4a-46d9-9de2-a0cb800cbcc4 [exportExcelBookingByScheduleIdController] Message:Can't set headers after they are sent.
+2023-12-21T07:06:13.966Z [500] [error] [admin@kit.edu.kh] [::1] GET:/booking/excel/schedule/filter?scheduleId=04e29e85-bb04-4506-871e-064611382c97 [exportExcelBookingByScheduleIdController] Message:Can't set headers after they are sent.
+2023-12-21T07:07:33.092Z [500] [error] [admin@kit.edu.kh] [::1] GET:/booking/excel/schedule/filter?scheduleId=04e29e85-bb04-4506-871e-064611382c97 [exportExcelBookingByScheduleIdController] Message:Can't set headers after they are sent.
+2023-12-21T07:10:30.638Z [500] [error] [admin@kit.edu.kh] [::1] GET:/booking/excel/schedule/filter?scheduleId=870fb66b-be4a-46d9-9de2-a0cb800cbcc4 [exportExcelBookingByScheduleIdController] Message:Can't set headers after they are sent.
+2023-12-21T07:11:16.042Z [500] [error] [admin@kit.edu.kh] [::1] GET:/booking/excel/schedule/filter?scheduleId=870fb66b-be4a-46d9-9de2-a0cb800cbcc4 [exportExcelBookingByScheduleIdController] Message:Can't set headers after they are sent.
+2023-12-21T07:11:23.519Z [500] [error] [admin@kit.edu.kh] [::1] GET:/booking/excel/schedule/filter?scheduleId=04e29e85-bb04-4506-871e-064611382c97 [exportExcelBookingByScheduleIdController] Message:Can't set headers after they are sent.
+2023-12-21T07:12:09.978Z [500] [error] [admin@kit.edu.kh] [::1] GET:/booking/excel/schedule/filter?scheduleId=870fb66b-be4a-46d9-9de2-a0cb800cbcc4 [exportExcelBookingByScheduleIdController] Message:Can't set headers after they are sent.
+2023-12-21T07:13:13.458Z [500] [error] [admin@kit.edu.kh] [::1] GET:/booking/excel/schedule/filter?scheduleId=870fb66b-be4a-46d9-9de2-a0cb800cbcc4 [exportExcelBookingByScheduleIdController] Message:Can't set headers after they are sent.
+2023-12-21T07:14:20.112Z [500] [error] [admin@kit.edu.kh] [::1] GET:/booking/excel/schedule/filter?scheduleId=04e29e85-bb04-4506-871e-064611382c97 [exportExcelBookingByScheduleIdController] Message:Can't set headers after they are sent.
+2023-12-21T07:56:07.603Z [500] [error] [admin@kit.edu.kh] [::1] GET:/booking/excel/schedule/filter?scheduleId=870fb66b-be4a-46d9-9de2-a0cb800cbcc4 [exportExcelBookingByScheduleIdController] Message:Can't set headers after they are sent.
+2024-01-10T05:41:08.190Z [500] [error] [No email] [::1] POST:/user/request/reset-password [requestResetPasswordController] Message:Error: Error in sending mail
+2024-01-10T05:41:11.139Z [500] [error] [No email] [::1] POST:/user/request/reset-password [requestResetPasswordController] Message:Error: Error in sending mail
+2024-01-10T05:41:12.215Z [500] [error] [No email] [::1] POST:/user/request/reset-password [requestResetPasswordController] Message:Error: Error in sending mail
+2024-01-10T05:41:13.242Z [500] [error] [No email] [::1] POST:/user/request/reset-password [requestResetPasswordController] Message:Error: Error in sending mail
+2024-01-10T05:41:14.232Z [500] [error] [No email] [::1] POST:/user/request/reset-password [requestResetPasswordController] Message:Error: Error in sending mail
+2024-01-10T05:41:14.951Z [500] [error] [No email] [::1] POST:/user/request/reset-password [requestResetPasswordController] Message:Error: Error in sending mail
+2024-01-10T05:41:16.450Z [500] [error] [No email] [::1] POST:/user/request/reset-password [requestResetPasswordController] Message:Error: Error in sending mail
+2024-01-10T08:49:27.718Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:50:48.973Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:52:05.908Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:52:07.828Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:52:09.008Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:52:10.318Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:52:12.142Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:52:14.679Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:52:15.745Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:52:58.087Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:53:14.199Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:53:15.438Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:53:16.036Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:53:17.508Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:53:18.264Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:53:19.050Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:53:19.809Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:54:26.050Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:54:27.303Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:54:36.532Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:54:37.450Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:54:38.538Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:54:39.748Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:54:43.318Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:55:06.089Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:55:08.045Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:55:09.324Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:55:09.670Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:55:57.102Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:55:58.238Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:55:59.880Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:56:00.710Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:56:01.633Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:56:02.422Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:57:03.544Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:57:04.601Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:58:36.258Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:58:37.186Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T08:59:16.799Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T09:08:03.972Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T09:08:43.379Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-10T09:08:45.949Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+<<<<<<< HEAD
+2024-01-11T19:05:24.960Z [200] [error] [admin@kit.edu.kh] [::1] POST:/subLocation [createSubLocationController] Message:Success
+2024-01-11T19:07:01.288Z [200] [error] [admin@kit.edu.kh] [::1] POST:/subLocation [createSubLocationController] Message:Success
+2024-01-13T08:13:08.099Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail?department=SOFTWAREENGINEERING&batch=15 [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-13T08:14:01.397Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail?department=SOFTWAREENGINEERING&batch=15 [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+2024-01-13T08:14:04.561Z [500] [error] [admin@kit.edu.kh] [::1] POST:/user/wishing-mail?department=SOFTWAREENGINEERING&batch=15 [confirmResetPasswordWithTokenController] Message:Error: Error in sending mail
+=======
+>>>>>>> 50d636d99d369574e82f666cd82cccfef78f44a2
+>>>>>>> a23b9b4dbec69d81e0d9dd7fa599d6c444a3cdb3

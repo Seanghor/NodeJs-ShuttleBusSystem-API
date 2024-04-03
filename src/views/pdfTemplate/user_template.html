@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Export Users</title>
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        padding: 20px;
+      }
+      .content {
+        margin: 10px;
+        /* margin-top: 40px; */
+      }
+      h1 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      table {
+        width: 100%;
+        table-layout: fixed;
+        border-collapse: collapse;
+        margin-bottom: 40px;
+        box-shadow: 0 2px 3px #f0f0f0;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        font-size: 9px;
+      }
+      th {
+        background-color: #0e6431;
+        /* color: #333; */
+        color: #f0f0f0;
+      }
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      /* Set specific widths for table columns */
+      .index {
+        width: 5%;
+      } /* Adjust as needed */
+      .name {
+        width: 20%;
+      } /* Adjust as needed */
+      .email {
+        width: 25%;
+      } /* Adjust as needed */
+      .status {
+        width: 10%;
+      } /* Adjust as needed */
+      .name,
+      .email,
+      .status {
+        text-align: left;
+        white-space: normal;
+        overflow-wrap: break-word;
+      }
+
+      /* Ensure text wraps within the cell */
+      th,
+      td {
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: right; font-size: 12px; color: #666">
+      Created: {{createAt}}
+    </div>
+    <div class="content">
+      <h1
+        style="
+          font-size: 40px;
+          font-weight: bold;
+          margin-bottom: 20px;
+          padding: 10px;
+          color: #03470c;
+          text-align: center;
+          margin-bottom: 50px;
+        "
+      >
+        List of {{listName}} Members
+      </h1>
+      <table>
+        <thead>
+          <tr>
+            <th class="index">No</th>
+            <th class="name">Name</th>
+            <th class="email">Email</th>
+            <th style="text-align: center">Gender</th>
+            <th class="status">Status</th>
+            <th>Role</th>
+            <th>Dept</th>
+            <th>Phone</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#if this.dataFromDb.length}} {{#each dataFromDb}}
+          <tr>
+            <td>{{this.index}}</td>
+            <td>{{this.username}}</td>
+            <td>{{this.email}}</td>
+            <td style="text-align: center">{{this.gender}}</td>
+            <td>{{this.status}}</td>
+            <td>{{this.role}}</td>
+            <td>{{this.department}}</td>
+            <td>{{this.phone}}</td>
+          </tr>
+          {{/each}} {{else}}
+          <tr>
+            <td colspan="9" style="text-align: center">No Data</td>
+          </tr>
+          {{/if}}
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

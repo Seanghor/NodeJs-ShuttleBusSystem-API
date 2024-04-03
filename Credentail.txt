@@ -1,0 +1,14 @@
+============= Super Admin =========
+username: Super Admin
+email: superadmin@kit.edu.kh
+password: superAdmin123
+
+============= Admin =========
+username: Admin Demo
+email: admin@kit.edu.kh
+password: admin123
+
+============= user =========
+username: User Demo
+email: demo@kit.edu.kh
+password: demo123

@@ -1,0 +1,310 @@
+<!-- 
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Booking Confirmation</title>
+   <style>
+     body {
+       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+       background-color: #f4f7f6;
+       margin: 0;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       min-height: 100vh;
+     }
+     .container {
+       max-width: 800px;
+       width: 100%;
+       border-radius: 10px;
+       border: 1px solid #08661d;
+       box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+     }
+     header {
+       background-color: #08661d;
+       color: #ffffff;
+       padding: 10px;
+       text-align: center;
+       border-top-left-radius: 10px;
+       border-top-right-radius: 10px;
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     }
+     .content {
+       text-align: left;
+       background-color: #ffffff;
+       padding: 30px;
+       margin-top: -10px;
+     }
+     h1 {
+       font-size: 2rem;
+       font-weight: 800;
+       color: #f8fcf9;
+       margin-bottom: 20px;
+     }
+     .details {
+       font-size: 0.9rem;
+       color: #333;
+       margin-bottom: 20px;
+       font-family: Arial, Helvetica, sans-serif;
+     }
+ 
+     .note {
+       font-size: 0.9rem;
+       color: #555;
+       margin-top: 20px;
+     }
+     footer {
+       background-color: #08661d;
+       color: #ffffff;
+       padding: 10px;
+       text-align: center;
+       border-bottom-left-radius: 10px;
+       border-bottom-right-radius: 10px;
+       box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+     }
+     .importantText {
+       font-weight: 400;
+       color: #5b83f1;
+     }
+ 
+     .detaileNameText {
+       font-weight: 200;
+       color: #000105;
+       font-family: 'Times New Roman', Times, serif;
+       min-width: 180px; /* Adjust the minimum width as needed */
+       text-align: left; /* Align the text to the left */
+     }
+ 
+     .detailInfoText {
+       font-weight: 200;
+       color: #525457;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       text-align: right; /* Align the text to the right */
+     }
+ 
+     .detailItem {
+       display: flex;
+       justify-content: space-between;
+       margin-bottom: 10px;
+     }
+     .linkText {
+       font-weight: lighter;
+       color: #3c6cf1;
+       text-decoration: none;
+     }
+   </style>
+ </head>
+ <body>
+   <div class="container">
+     <header>
+       <h1>SBS Booking Confirmation</h1>
+     </header>
+     <div class="content">
+       <p class="details">
+         Hi, <span class="importantText"><%=name%></span><br />
+         We are pleased to confirm your recent booking with Shuttle Bus.
+       </p>
+       <div class="detailItem">
+         <span class="detaileNameText">Departure</span>
+         <span class="detailInfoText">: <%=departure%></span>
+       </div>
+       <div class="detailItem">
+         <span class="detaileNameText">Departure Date</span>
+         <span class="detailInfoText">: <%=departureDate%></span>
+       </div>
+       <div class="detailItem">
+         <span class="detaileNameText">Departure Time</span>
+         <span class="detailInfoText">: <%=departureTime%></span>
+       </div>
+       <div class="detailItem">
+         <span class="detaileNameText">Date of Booking</span>
+         <span class="detailInfoText">: <%=booking_date%></span>
+       </div>
+       <div class="detailItem">
+         <span class="detaileNameText">Pick Up at</span>
+         <span class="detailInfoText">: <%=pickup%></span>
+       </div>
+       <div class="detailItem">
+         <span class="detaileNameText">Drop off at</span>
+         <span class="detailInfoText">: <%=drop%></span>
+       </div>
+       <p class="note">
+         This email serves as a confirmation of your booking. If you have any questions or concerns, feel free to reach out to us at 
+         <a href="mailto:<%=sbsTeam%>" class="linkText">email</a> 
+       </p>
+       <p class="note">
+         Please note that this is a confirmation email, and you can simply disregard it if everything is in order.
+       </p>
+     </div>
+     <footer>
+       <p>Best regards, Shuttle Bus Team</p>
+     </footer>
+   </div>
+ </body>
+ </html>
+  -->
+
+
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Confirmation</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f7f6;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      .container {
+        max-width: 800px;
+        width: 100%;
+        border-radius: 10px;
+        border: 1px solid #08661d;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+      }
+      header {
+        background-color: #08661d;
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: relative;
+      }
+      .logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 50px; /* Adjust the width of your logo */
+        height: auto; /* Maintain aspect ratio */
+      }
+      .content {
+        text-align: left;
+        background-color: #ffffff;
+        padding: 30px;
+        margin-top: -10px;
+      }
+      h1 {
+        font-size: 1.7rem;
+        font-weight: 800;
+        color: #f8fcf9;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif  ;
+        margin-bottom: 20px;
+      }
+      .details {
+        font-size: 0.9rem;
+        color: #333;
+        margin-bottom: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .note {
+        font-size: 0.9rem;
+        color: #555;
+        margin-top: 20px;
+      }
+      footer {
+        background-color: #08661d;
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .importantText {
+        font-weight: 400;
+        color: #5b83f1;
+      }
+      .detaileNameText {
+        font-weight: 200;
+        color: #000105;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      .detailInfoText {
+        font-weight: 200;
+        color: #525457;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: right;
+      }
+      .detailItem {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      .linkText {
+        font-weight: lighter;
+        color: #3c6cf1;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img class="logo" src="http://136.228.141.22/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.198a873d.png&w=64&q=75" alt="Logo SBS" />
+        <h1>SBS Booking Confirmation</h1>
+      </header>
+      <div class="content">
+        <p class="details">
+          Hi, <span class="importantText"><%=name%></span><br />
+          We are pleased to confirm your recent booking with Shuttle Bus.
+        </p>
+
+        <p class="details">
+          <div class="detailItem">
+            <span style="font-size: medium; font-weight: bold; font-family: Verdana, Geneva, Tahoma, sans-serif;">Details of Your Booking:</span>
+          </div>
+          <div class="detailItem">
+            <span class="detaileNameText">Departure</span>
+            <span class="detailInfoText">: <%=departure%></span>
+          </div>
+          <div class="detailItem">
+            <span class="detaileNameText">Departure Date</span>
+            <span class="detailInfoText">: <%=departureDate%></span>
+          </div>
+          <div class="detailItem">
+            <span class="detaileNameText">Departure Time</span>
+            <span class="detailInfoText">: <%=departureTime%></span>
+          </div>
+          <div class="detailItem">
+            <span class="detaileNameText">Date of Booking</span>
+            <span class="detailInfoText">: <%=booking_date%></span>
+          </div>
+          <div class="detailItem">
+            <span class="detaileNameText">Pick Up at</span>
+            <span class="detailInfoText">: <%=pickup%></span>
+          </div>
+          <div class="detailItem">
+            <span class="detaileNameText">Drop off at</span>
+            <span class="detailInfoText">: <%=drop%></span>
+          </div>
+        </p>
+        <p class="note">
+          This email serves as a confirmation of your booking. If you have any questions or concerns, feel free to reach out to us at
+          <a href="mailto:<%=sbsTeam%>" class="linkText">email</a>
+        </p>
+        <p class="note">
+          Please note that this is a confirmation email, and you can simply disregard it if everything is in order.
+        </p>
+      </div>
+      <footer>
+        <p>Best regards, Shuttle Bus Team</p>
+      </footer>
+    </div>
+  </body>
+</html>
